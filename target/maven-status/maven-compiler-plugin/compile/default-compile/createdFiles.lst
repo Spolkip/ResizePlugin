@@ -1,0 +1,7 @@
+me\help\atlascoreresize\commands\ResizeReloadCommand.class
+me\help\atlascoreresize\commands\ResizeGroupCommand.class
+me\help\atlascoreresize\utils\PlayerAttributesUtil.class
+me\help\atlascoreresize\commands\ResizeCommand.class
+me\help\atlascoreresize\AtlasCoreResize.class
+me\help\atlascoreresize\commands\ResizeHelpCommand.class
+me\help\atlascoreresize\commands\ResizeTabCompleter.class

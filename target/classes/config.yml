@@ -1,0 +1,21 @@
+settings:
+  base-speed: 0.1      # Default movement speed multiplier
+  min-scale: 0.1       # Minimum allowed player scale
+  max-scale: 10.0      # Maximum allowed player scale
+
+groups:
+  tiny:
+    scale: 0.5                # Tiny player's scale (50% of normal size)
+    speed-multiplier: 1.1     # Slightly faster movement
+    jump-multiplier: 1.0      # Normal jump height
+    block-reach: 1.0          # Very small block reach
+    entity-reach: 1.0         # Very small interaction range for entities
+    safe-fall-distance: 5.0   # Can fall up to 5 blocks without taking damage
+
+  giant:
+    scale: 3.0                # Giant player's scale (3x normal size)
+    speed-multiplier: 0.5     # Slower movement
+    jump-multiplier: 1.5      # Increased jump height
+    block-reach: 2.0          # Increased block reach
+    entity-reach: 5.0         # Can interact with entities farther away
+    safe-fall-distance: 20.0  # Can fall up to 20 blocks without taking damage
