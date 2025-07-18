@@ -1,0 +1,8 @@
+me\help\resizeplugin\ResizePlugin.class
+me\help\resizeplugin\utils\PlayerAttributesUtil.class
+me\help\resizeplugin\commands\ResizeTabCompleter.class
+me\help\resizeplugin\commands\ResizeCommand.class
+me\help\resizeplugin\commands\ResizeGroupCommand.class
+me\help\resizeplugin\listeners\PlayerChangedWorldListener.class
+me\help\resizeplugin\commands\ResizeHelpCommand.class
+me\help\resizeplugin\commands\ResizeReloadCommand.class

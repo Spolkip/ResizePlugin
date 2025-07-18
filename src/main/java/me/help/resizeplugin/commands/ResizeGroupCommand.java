@@ -1,8 +1,7 @@
 package me.help.resizeplugin.commands;
 
-import me.help.atlascoreresize.AtlasCoreResize;
-import me.help.atlascoreresize.utils.PlayerAttributesUtil;
 import me.help.resizeplugin.ResizePlugin;
+import me.help.resizeplugin.utils.PlayerAttributesUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -12,7 +11,7 @@ import org.bukkit.entity.Player;
 
 public class ResizeGroupCommand implements CommandExecutor {
 
-    private final AtlasCoreResize plugin;
+    private final ResizePlugin plugin;
 
     public ResizeGroupCommand(ResizePlugin plugin) {
         this.plugin = plugin;

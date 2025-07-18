@@ -1,6 +1,6 @@
 package me.help.resizeplugin.commands;
 
-import me.help.atlascoreresize.utils.PlayerAttributesUtil;
+import me.help.resizeplugin.utils.PlayerAttributesUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
