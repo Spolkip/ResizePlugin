@@ -1,0 +1,71 @@
+settings:
+  base-speed: 0.1      # Default movement speed multiplier
+  min-scale: 0.1       # Minimum allowed player scale
+  max-scale: 10.0      # Maximum allowed player scale
+  disabled-worlds:
+    - "hub"
+
+groups:
+  goblin:
+    scale: 0.7
+    speed-multiplier: 0.9
+    jump-multiplier: 1.0
+    block-reach: 4.0
+    entity-reach: 4.0
+    safe-fall-distance: 3.0
+  halfling:
+    scale: 0.7
+    speed-multiplier: 0.9
+    jump-multiplier: 1.0
+    block-reach: 4.0
+    entity-reach: 4.0
+    safe-fall-distance: 3.0
+  elf:
+    scale: 1.0                # Giant player's scale (3x normal size)
+    speed-multiplier: 1.0
+    jump-multiplier: 1.0
+    block-reach: 4.0
+    entity-reach: 4.0
+    safe-fall-distance: 3.0
+  vampire:
+    scale: 1.0
+    speed-multiplier: 1.0
+    jump-multiplier: 1.0
+    block-reach: 4.5
+    entity-reach: 4.5
+    safe-fall-distance: 3.0
+  skeleton:
+    scale: 0.85
+    speed-multiplier: 1.0
+    jump-multiplier: 1.0
+    block-reach: 4.5
+    entity-reach: 4.5
+    safe-fall-distance: 2.0
+  mechanoid:
+    scale: 1.3
+    speed-multiplier: 1.1
+    jump-multiplier: 1.5
+    block-reach: 4.0
+    entity-reach: 4.0
+    safe-fall-distance: 4.0
+  human:
+    scale: 0.9                # Giant player's scale (3x normal size)
+    speed-multiplier: 1.0     # Slower movement
+    jump-multiplier: 0.9      # Increased jump height
+    block-reach: 4.0          # Increased block reach
+    entity-reach: 4.0         # Can interact with entities farther away
+    safe-fall-distance: 3.0   # Can fall up to 20 blocks without taking damage
+  dwarf:
+    scale: 0.75
+    speed-multiplier: 0.8
+    jump-multiplier: 1.0
+    block-reach: 2.0
+    entity-reach: 2.0
+    safe-fall-distance: 2.0
+  gnome:
+    scale: 0.6
+    speed-multiplier: 0.8
+    jump-multiplier: 1.0
+    block-reach: 3.0
+    entity-reach: 3.0
+    safe-fall-distance: 3.0

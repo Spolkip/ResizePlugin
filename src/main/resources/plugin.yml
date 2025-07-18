@@ -1,0 +1,46 @@
+name: AtlasCoreResize
+version: '${project.version}'
+main: me.help.resizeplugin.ResizePlugin
+api-version: '1.20'
+
+commands:
+  resize:
+    description: Change your player's size or another player's size.
+    usage: /resize <playername> <scale>
+    permission: resize.use
+
+  resizegroup:
+    description: Select a predefined size group for yourself or another player.
+    usage: /resizegroup <playername> <group>
+    permission: resize.group
+
+  resizereload:
+    description: Reloads the plugin and applies settings to online players.
+    usage: /resizereload
+    permission: resize.reload
+
+  resizehelp:
+    description: Displays help for all resize commands.
+    usage: /resizehelp
+    permission: resize.help
+
+permissions:
+  resize.use:
+    description: Allows the player to change their size with /resize.
+    default: op
+
+  resize.group:
+    description: Allows the player to join a size group with /resizegroup.
+    default: op
+
+  resize.reload:
+    description: Allows reloading the plugin with /resizereload.
+    default: op
+
+  resize.help:
+    description: Allows players to use /resizehelp.
+    default: true
+
+  resize.others:
+    description: Allows resizing other players.
+    default: op
