@@ -2,6 +2,8 @@ package me.help.resizeplugin.listeners;
 
 import me.help.resizeplugin.ResizePlugin;
 import me.help.resizeplugin.utils.PlayerAttributesUtil;
+import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -24,6 +26,14 @@ public class PlayerChangedWorldListener implements Listener {
             // Reset attributes if the new world is disabled
             PlayerAttributesUtil.resetPlayerAttributes(player, plugin.getConfig());
             player.sendMessage("§cResizing is disabled in this world. Your attributes have been reset.");
+
+            // Force a client-side update
+            final GameMode originalGameMode = player.getGameMode();
+            player.setGameMode(GameMode.SPECTATOR);
+            Bukkit.getScheduler().runTaskLater(plugin, () -> {
+                player.setGameMode(originalGameMode);
+            }, 1L); // 1 tick delay
+
         } else if (lastGroup != null) {
             // Reapply the player's group if the new world is enabled
             PlayerAttributesUtil.setPlayerGroup(player, lastGroup, plugin.getConfig());
